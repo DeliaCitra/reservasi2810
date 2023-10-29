@@ -34,7 +34,7 @@
                     </ul>
                 </li>
                 <li class="nav-item me-5">
-                    <a href="logout" class="btn btn-dark btn-sm">LOGOUT</a>
+                    <a href="logout" class="btn btn-outline-dark shadow-none me-lg-3 me-2">LOGOUT</a>
                 </li>
             </ul>
         </div>

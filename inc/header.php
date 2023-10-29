@@ -198,7 +198,8 @@ if (isset($_POST['user_login'])) {
                         </div>
                     </div>
                     <div class="text-center my-1">
-                        <button name="user_register" type="submit" class="btn btn-dark shadow-none">Sign in</button>
+                        <button name="user_register" type="submit"
+                            class="btn btn-outline-dark shadow-none me-lg-3 me-2">Sign in</button>
                     </div>
                 </div>
             </form>
