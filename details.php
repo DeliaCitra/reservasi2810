@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asriloka - DETAILS</title>
+    <link rel="icon" href="assets/images/logoAW.png">
 
     <?php require('inc/links.php'); ?>
 

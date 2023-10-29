@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pemesanan </title>
+    <link rel="icon" href="assets/images/logoAW.png">
+
     <?php require('./admin/inc/links.php'); ?>
 </head>
 
@@ -117,14 +119,14 @@
                                         $html .= "Check Out";
                                         $html .= "</div></div></td>";
                                     } else {
-                                        $html .= "<td><a href='invoice.php?booking_id=$value[id]&user_id=$user[id]&room_id=$value[roomId]&check_in=$value[checkIn]&check_out=$value[checkOut]&bundling_id=$value[bundlingId]&number_of_people=$value[capacity]' class='btn btn-primary'>Invoice</a></td>";
+                                        $html .= "<td><div class='d-flex justify-content-center'><a href='invoice.php?booking_id=$value[id]&user_id=$user[id]&room_id=$value[roomId]&check_in=$value[checkIn]&check_out=$value[checkOut]&bundling_id=$value[bundlingId]&number_of_people=$value[capacity]' class='btn btn-outline-dark shadow-none me-lg-3 me-2'>Invoice</a></div></td>";
                                     }
                                     $html .= "<td>";
                                     $html .= "<div class='d-flex justify-content-center'>";
-                                    $html .= "<button type='button' class='btn btn-primary viewBookingBtn' data-booking-id='$value[id]'>View</button>";
+                                    $html .= "<button type='button' class='btn btn-outline-dark shadow-none me-lg-3 me-2 viewBookingBtn' data-booking-id='$value[id]'>View</button>";
 
                                     if ($value['status'] == 'BOOKED' && $value['paymentMethod'] == 'DP') {
-                                        $html .= "<button type='button' class='btn btn-primary mx-2' data-bs-toggle='modal' data-bs-target='#uploadBuktiPembayaran' data-bs-id='$value[id]' style='width:215px;'>Upload Bukti Pembayaran</button>";
+                                        $html .= "<button type='button' class='btn btn-outline-dark shadow-none me-lg-3 me-2' data-bs-toggle='modal' data-bs-target='#uploadBuktiPembayaran' data-bs-id='$value[id]' style='width:215px;'>Upload Bukti Pembayaran</button>";
                                     }
                                     $html .= "</div>";
 
@@ -218,7 +220,8 @@
                                             name="bukti_pembayaran">
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="submit" class="btn btn-primary">Upload</button>
+                                        <button type="submit"
+                                            class="btn btn-outline-dark shadow-none me-lg-3 me-2">Upload</button>
                                     </div>
                                 </form>
 

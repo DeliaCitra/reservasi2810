@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asriloka - PAKET CAMP</title>
+    <link rel="icon" href="assets/images/logoAW.png">
 
     <?php require('inc/links.php'); ?>
 
@@ -124,7 +125,7 @@
                                 $html .= "</div>";
                                 $html .= "<div class='col-md-3 text-center'>";
                                 $html .= "<h6 class='mb-4'>Rp $value[price]/malam</h6>";
-                                $html .= "<a href='details?type=paketCAMP&id=$value[id]' class='btn btn-primary'>Book Now</a>";
+                                $html .= "<a href='details?type=paketCAMP&id=$value[id]' class='btn btn-outline-dark shadow-none me-lg-3 me-2'>Book Now</a>";
                                 $html .= "</div>";
                                 $html .= "</div>";
                                 $html .= "</div>";

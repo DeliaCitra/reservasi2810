@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asriloka - HOME</title>
+    <link rel="icon" href="assets/images/logoAW.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <?php require('inc/links.php'); ?>
@@ -66,7 +67,7 @@
                         </div>
 
                         <div class="col-lg-2 mb-lg-3 mt-2">
-                            <button type="submit" class=" btn text-white shadow-none custom-bg">Submit</button>
+                            <button type="submit" class="btn btn-outline-dark shadow-none me-lg-3 me-2">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -189,7 +190,7 @@
 
                             <div class="d-flex justify-content-evenly mb-2s">
                                 <a href='details?type=room&id=<?= $r['id'] ?>'
-                                    class='btn btn-sm text-white custom-bg shadow-none'>Book Now</a>
+                                    class='btn btn-outline-dark shadow-none me-lg-3 me-2'>Book Now</a>
                             </div>
                         </div>
                     </div>

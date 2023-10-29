@@ -20,7 +20,7 @@ if (isset($_POST['user_register'])) {
     if ($data['password'] != $data['confirm_password']) {
         echo alert('error', 'Password and Confirm Password must be same');
     }
-    if (empty($data['dob']) || $data['dob'] > date('Y-m-d')) {
+    if (empty($data['dob']) || $data['dob'] > date('d-m-Y')) {
         echo alert('error', 'Invalid Date of Birth');
     }
 
@@ -133,7 +133,7 @@ if (isset($_POST['user_login'])) {
                         <input type="password" class="form-control shadow-none" name="password" id="password" required>
                     </div>
                     <div class="d-flex align-item-center justify-content-between mb-2">
-                        <button name="user_login" type="submit" class="btn btn-dark shadow-none">LOGIN</button>
+                        <button name="user_login" type="submit" class="btn btn-dark shadow-none">Log in</button>
                         <a href="javascript: void(0)" class="text-scondary text-decoration-none">Forgot
                             Password?</a>
                     </div>
@@ -156,8 +156,8 @@ if (isset($_POST['user_login'])) {
                         aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <span class="badge rounded-pill bg-light text-dark mb-3 text-wrap lh-base">Note : Your details
-                        must match with your ID</span>
+                    <span class="badge rounded-pill bg-light text-danger mb-3 text-wrap lh-base">Note : Pastikan anda
+                        sudah mengisi data dengan benar</span>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6 ps-0 mb-3">
@@ -168,37 +168,37 @@ if (isset($_POST['user_login'])) {
                                 <label for="email" class="form-label">Email</label>
                                 <input id="email" name="email" type="email" class="form-control shadow-none" required>
                             </div> -->
-                            <div class="col-md-6 ps-0 mb-3">
-                                <label for="phone" class="form-label">Phone Number</label>
+                            <div class="col-md-6 p-0 mb-3">
+                                <label for="phone" class="form-label">No Telepon</label>
                                 <input id="phone" name="phone" type="number" class="form-control shadow-none required">
                             </div>
-                            <div class="col-md-6 p-0 mb-3">
+                            <div class="col-md-6 ps-0 mb-3">
                                 <label for="picture" class="form-label">Picture</label>
                                 <input id="picture" name="picture" type="file" class="form-control shadow-none">
                             </div>
-                            <div class="col-md-6 ps-0 mb-3">
-                                <label for="dob" class="form-label">Date of birth</label>
+                            <div class="col-md-6 p-0 mb-3">
+                                <label for="dob" class="form-label">Tanggal Lahir</label>
                                 <input id="dob" name="dob" type="date" class="form-control shadow-none" required>
                             </div>
-                            <div class="col-md-6 p-0 mb-3">
+                            <div class="col-md-6 ps-0 mb-3">
                                 <label for="password" class="form-label">Password</label>
                                 <input id="password" name="password" type="password" class="form-control shadow-none"
                                     required>
                             </div>
-                            <div class="col-md-6 ps-0 mb-3">
-                                <label for="confirm_password" class="form-label">Confirm Password</label>
+                            <div class="col-md-6 p-0 mb-3">
+                                <label for="confirm_password" class="form-label">Konfirmasi Password</label>
                                 <input id="confirm_password" name="confirm_password" type="password"
                                     class="form-control shadow-none" required>
                             </div>
-                            <div class="col-md-6 p-0 mb-3">
-                                <label for="address" class="form-label">Address</label>
+                            <div class="col-md-12 p-0 mb-3">
+                                <label for="address" class="form-label">Alamat</label>
                                 <textarea id="address" name="address" class="form-control shadow-none" rows="3"
                                     required></textarea>
                             </div>
                         </div>
                     </div>
                     <div class="text-center my-1">
-                        <button name="user_register" type="submit" class="btn btn-dark shadow-none">REGISTER</button>
+                        <button name="user_register" type="submit" class="btn btn-dark shadow-none">Sign in</button>
                     </div>
                 </div>
             </form>
